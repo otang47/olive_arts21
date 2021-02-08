@@ -105,7 +105,7 @@ p.one {
 
 .backdrop {
  width: 100%; height: 100%;
- background-image: url(news-room-gallery/bed-image.jpg);
+ background-image: url("https://www.gannett-cdn.com/presto/2019/10/22/PDTF/f7953ada-aa7f-4e4b-bec8-7d4d49b3ff4f-bedtime_after_release3.jpg?width=660&height=413&fit=crop&format=pjpg&auto=webp");
  background-size: 100%;
  margin: auto;
 }
