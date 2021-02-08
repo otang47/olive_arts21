@@ -1,0 +1,115 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #ffe6b3;
+}
+
+p {
+  font-weight: 300;
+  color: black;
+  margin: 40px;
+  font-size: 20px;
+  text-align: left;
+}
+h2{
+	font-weight: 300;
+  color: black;
+  margin: 10px;
+  font-size: 45px;
+  text-align: left;
+}
+
+h1{
+  position: relative;
+  text-align: center;
+  margin: 0;
+  top: 50%;
+  font-size: 100 px;
+  color: white;
+  font-weight: 300;
+}
+
+.wrapper {
+  height: 100vh;
+}
+.parallax-img {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+.parallax-img {
+  background-image: url("https://cms.qz.com/wp-content/uploads/2019/04/SIWATU_04-e1554481979334.jpg?quality=75&strip=all&w=3200&h=1802");
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10 px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr.gallery {
+  border-top: 3px solid black;
+}
+
+.half-column{
+  float: left;
+  width: 50%;
+  padding: 0 px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  width: 40%;
+  right: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 50%;
+}
+
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+}
+
+p.one {
+  border-style: solid;
+  border-color: red;
+  font-weight: 300;
+  color: black;
+  font-size: 45px;
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
