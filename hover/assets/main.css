@@ -1,0 +1,95 @@
+@font-face{
+	font-family: Caveat;
+	src: url(Caveat-VariableFont_wght.ttf);
+}
+
+.content{
+	max-width: 50%;
+ 	padding: 100px 30px;
+ 	margin: auto;
+ 	text-align: left;
+    font-family: Caveat;
+    font-size: 38px;
+    color: white;
+}
+
+body{
+	background-image: url("sky.jpg");
+}
+h1{
+	margin-bottom: 10px;
+}
+p{
+	margin-top: 5px;
+	margin-bottom: : 0px;
+	font-size: 50px;
+}
+
+/* hovers */
+.moon {
+        position: relative;
+        display: inline-block;
+    }
+    .moon .full-moon {
+        width: 100px;
+        height: : 100px;
+    }
+    .moon .crescent {
+        transition: opacity 0.5s ease-in-out 0s;
+  		opacity:0;
+        position: absolute;
+        width: 100px;
+        height: : 100px;
+    }
+    .moon:hover .crescent {
+        opacity:1;
+        cursor: pointer;
+    }
+.alternate{
+	opacity: 0;
+}
+
+.alternate:hover {
+  opacity: 1;
+  cursor: pointer;
+  -webkit-transition:.5s ease-in-out;
+}
+
+.thing:hover {
+	animation: shake 0.3s  ; 
+	cursor: pointer;
+	animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.hide {
+  display: none;
+  text-align: center;
+}
+
+.myDIV{
+	text-align: center;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+
+
+
+
+
+
+
+
