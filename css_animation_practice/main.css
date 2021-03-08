@@ -1,0 +1,81 @@
+html{
+  background-color: white;
+}
+
+#waves {
+  height:500px;
+  position: relative;
+  z-index: -1; 
+}
+
+#waves .cls-2{
+	fill: #B90E0A;
+	animation: colorSwapBowl 3s 1s forwards;
+
+}
+
+#cover {
+  position: absolute;
+  height:502px;
+  top: 6px;
+  left: 7px;
+  bottom: 0px;
+  text-align:center;
+  animation: spin 3s linear 1s 1 normal forwards;
+  z-index: 1;
+
+}
+
+#cover .cls-1 {
+	animation: colorSwapTop 3s 1s forwards;
+}
+
+#chopsticks{
+	position: absolute;
+	left: -20px;
+	top: 0px;
+	height: 400px;
+	opacity: 0;
+	animation: dip 2s 4s forwards;
+	z-index: 1;
+
+	
+}
+
+@keyframes dip {
+	0% {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+	100% {
+		transform: rotate(50deg);
+		opacity: 1;
+	}
+}
+
+@keyframes colorSwapBowl {
+  0% {
+    fill: #B90E0A;
+  }
+  100% {
+    fill: #D2B48C;
+  }
+}
+
+@keyframes colorSwapTop {
+  0% {
+    fill: #B90E0A;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+@keyframes spin{
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
