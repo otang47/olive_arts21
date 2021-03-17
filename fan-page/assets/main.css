@@ -9,14 +9,15 @@
   font-size: 30px
   }
   .col-1 {
-    background: white;
+    background-color: #f9f3ca;
     flex: 1;
   }
   .col-2 {
-    background-image: url("canvas.jpg");
+    background-color: #005238;
     display: flex;
     flex-direction: column;
     flex: 6;
+    z-index: -3;
   }
 
 /*small flex*/
@@ -29,10 +30,13 @@
   .col-1-small {
     /*background: red;*/
     width: 50%;
+    padding: 30px 0px 30px 0px;
   }
   .col-2-small {
     /*background: yellow;*/
     width: 50%;
+    position: relative;
+
   }
 
 
@@ -71,7 +75,7 @@
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid #9f4250;
   top: 40px;
   border-radius: 50%;
   z-index: 1;
@@ -127,43 +131,52 @@ img{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  z-index: -1;
 }
-.image_container{
-  position: relative;
-}
-.bottom_image{
-  position: relative;
-}
-.top_image{
+svg{
   position: absolute;
-   top: 20px;
-  left: 30px;
+  top: -200px;
+  max-height: 100%;
+  z-index: -1;
 }
+.drawings{
+  z-index: 2;
+  position: absolute; 
 
-/*hover*/
-.reveal {
-    display: none;
 }
-
-.hidden_word {
+.drawingWater{
+    left: -200px;
+    top: 70px;
+    width: 2500px;
+    position: absolute;
+    transform: rotate(344deg);
 }
-
-.hidden_word:hover .reveal {
-    display: block;
+.drawingRain{
+    left: -100px;
+    top: 90px;
+    width: 500px;
+    position: absolute;
+    transform: rotate(344deg);
 }
-
 
 /*font*/
 .quotes{
   font-family: bodyRegular;
-  margin: 30px;
-  font-size: 50px;
+  margin: 20px 100px 20px 100px;
+  font-size: 20px;
+  color: #f9f3ca;
 }
 
 .main-header{
   font-size: 100px;
   font-family: title;
   text-align: center;
+  color: #f9f3ca;
+}
+
+hr{
+  border: 1px dashed #f9f3ca;
+  width: 80%;
 }
 
 @font-face {
@@ -173,5 +186,22 @@ img{
 @font-face {
   font-family: title;
   src: url(ShipporiMincho-Medium.ttf);
+}
+
+/*animation*/
+#yin-yang {
+  height:500px;
+  /*animation: spinYin 5s;*/
+  bottom: 0px;
+  max-width: 100%;
+}
+
+@keyframes spinYin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
