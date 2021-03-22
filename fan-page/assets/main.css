@@ -600,10 +600,10 @@ hr{
 /*links*/
 a:link {
   text-decoration: none;
-
+  color: var(--green);
 }
 a:visited {
-  
+  color: var(--green);
   text-decoration: none;
 }
 
