@@ -611,6 +611,58 @@ hr{
   cursor: url(angryCursor.png), auto;
 
 }
+.revealTextHuman{
+  /*border: 2px solid var(--red);*/
+  padding: 0 5px;
+  z-index: 1;
+  color: var(--green);
+}
+
+.revealTextHuman:hover {
+  color: var(--tan);
+  transition: all 0.5s ease-in-out;
+  cursor: url(humanCursor.png), auto;
+
+}
+.revealTextEnvironment{
+  /*border: 2px solid var(--red);*/
+  padding: 0 5px;
+  z-index: 1;
+  color: var(--green);
+}
+
+.revealTextEnvironment:hover {
+  color: var(--tan);
+  transition: all 0.5s ease-in-out;
+  cursor: url(environmentCursor.png), auto;
+
+}
+.revealTextDangerous{
+  /*border: 2px solid var(--red);*/
+  padding: 0 5px;
+  z-index: 1;
+  color: var(--green);
+}
+
+.revealTextDangerous:hover {
+  color: var(--tan);
+  transition: all 0.5s ease-in-out;
+  cursor: url(dangerousCursor.png), auto;
+
+}
+.revealTextCommercial{
+  /*border: 2px solid var(--red);*/
+  padding: 0 5px;
+  z-index: 1;
+  color: var(--green);
+}
+
+.revealTextCommercial:hover {
+  color: var(--tan);
+  transition: all 0.5s ease-in-out;
+  cursor: url(commercialCursor.png), auto;
+
+}
 
 /*links*/
 a:link {
