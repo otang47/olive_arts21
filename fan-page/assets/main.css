@@ -51,15 +51,16 @@ body{
   }
   .col-1-small {
     /*background: red;*/
-    width: 60%;
+    max-width: 60%;
     padding: 30px 0px 30px 0px;
   }
   .col-2-small {
     /*background: yellow;*/
-    width: 40%;
+    max-width: 40%;
     position: relative;
 
   }
+
 
 
 /* The actual timeline (the vertical ruler) */
@@ -593,7 +594,21 @@ hr{
 .revealText:hover {
   color: var(--tan);
   transition: all 0.5s ease-in-out;
-  cursor: pointer;
+  cursor: url(cursor.png), auto;
+
+}
+
+.revealTextAngry{
+  /*border: 2px solid var(--red);*/
+  padding: 0 5px;
+  z-index: 1;
+  color: var(--green);
+}
+
+.revealTextAngry:hover {
+  color: var(--tan);
+  transition: all 0.5s ease-in-out;
+  cursor: url(angryCursor.png), auto;
 
 }
 
@@ -606,4 +621,6 @@ a:visited {
   color: var(--green);
   text-decoration: none;
 }
+a:active {
+  color: var(--green);
 
