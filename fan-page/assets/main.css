@@ -1,6 +1,7 @@
 :root {
-  --green: #005238;
+  --green: #26402b;
   --tan: #f9f3ca;
+  --red: #ff6e6e;
 }
 
 body{
@@ -29,7 +30,7 @@ body{
     display: flex;
     flex-direction: column;
     flex: 6;
-    z-index: -3;
+    
     flex-flow: column wrap;
     overflow: hidden;
 
@@ -64,7 +65,7 @@ body{
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: absolute;
-  top: 20%;
+  top: 10%;
   max-width: 50%;
   margin: 0 auto;
   font-family: title;
@@ -75,7 +76,7 @@ body{
   content: '';
   position: absolute;
   width: 6px;
-  background-color: grey;
+  background-color: var(--green);
   top: 0;
   bottom: 0;
   left: 40px;
@@ -96,11 +97,33 @@ body{
   height: 25px;
   right: -40%;
   background-color: var(--tan);
-  border: 4px solid #9f4250;
+  border: 4px solid var(--red);
   top: 40px;
   border-radius: 50%;
   z-index: 1;
 }
+/*current page circle*/
+.container2 {
+  padding: 40px 40px 10px 10px;
+  position: relative;
+  background-color: inherit;
+}
+
+/* The circles on the timeline */
+.container2::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -40%;
+  background-color: var(--red);
+  border: 4px solid var(--red);
+  top: 40px;
+  border-radius: 50%;
+  z-index: 1;
+}
+/*current page circle*/
+
 
 /* Place the container to the right */
 .right {
@@ -147,30 +170,103 @@ img{
 }
 .containerdiv {
   border: 0;
+  top: 10%;
   top: 30px;
   float: left;
   position: relative;
 } 
 .mainImage{
-    max-height: 90%;
+    max-height: 60%;
+    max-width: 70%;
+}
+.mainImage2{
+    max-height: 60%;
+    max-width: 100%;
+}
+.mainImage3{
+    max-height: 60%;
     max-width: 90%;
 }
+.mainImage4{
+    max-width: 140%;
+    /* float: left; */
+    right: 100px;
+    position: relative;
+}
+/*80a2c5- bluie*/
 .cornerimageWater {
     border: 0;
-    max-height: 80%;
+    max-height: 50%;
     position: absolute;
     top: 60%;
-    right: -70%;
-    transform: rotate(330deg);
+    right: 0%;
+    /*transform: rotate(330deg);*/
  } 
-.cornerimage {
+.drop1 {
   border: 0;
   max-height: 30%;
   position: absolute;
   top: 30%;
-  right: 65%;
- } 
+  right: 75%;
+  opacity: 0%;
+ }
 
+.bridge {
+  border: 0;
+    max-height: 40%;
+    position: absolute;
+    top: 60%;
+    right: 90%;
+ } 
+.holePerson {
+  border: 0;
+  max-height: 80%;
+  position: absolute;
+  top: 100%;
+  right: 50%;
+ } 
+.cloud {
+  border: 0;
+  max-height: 50%;
+  position: absolute;
+  top: -10%;
+  right: 60%;
+ } 
+ .female {
+  border: 0;
+  max-height: 70%;
+  position: absolute;
+  top: -20%;
+  right: -50px;
+ } 
+ .walking {
+  border: 0;
+  max-height: 70%;
+  position: absolute;
+  top: 80%;
+  right: 0px;
+ } 
+ .steps {
+  border: 0;
+  max-height: 70%;
+  position: absolute;
+  top: 80%;
+  right: 0px;
+ }
+ .randoseru {
+  border: 0;
+  max-height: 70%;
+  position: absolute;
+  top: 40vh;
+  right: 130%;
+ }
+ .tree {
+    border: 0;
+    max-height: 100%;
+    position: absolute;
+    top: 70%;
+    right: 30%;
+ } 
 
 /*font*/
 .timelineFont{
@@ -178,75 +274,337 @@ img{
   font-size: 20px;
   color: var(--green);
 }
+.timePeriod{
+  font-family: title;
+  font-size: 20px;
+  color: var(--red);
+}
 .quotes{
   font-family: bodyRegular;
-  margin: 20px 100px 20px 100px;
-  font-size: 20px;
-  color: #f9f3ca;
+  margin: 20px 50px 20px 50px;
+  font-size: 2vh;
+  color: var(--red);
 }
 
 .main-header{
   font-size: 400%;
   font-family: title;
   text-align: center;
-  color: #f9f3ca;
+  color: var(--tan);
 }
 
 hr{
-  border: 1px dashed #f9f3ca;
+  border: 1px dashed var(--red);
   width: 80%;
 }
 
 @font-face {
   font-family: bodyRegular;
-  src: url(ShipporiMincho-Regular.ttf);
+  src: url(ShipporiMincho-Medium.ttf);
 }
 @font-face {
   font-family: title;
-  src: url(ShipporiMincho-Medium.ttf);
+  src: url(ShipporiMincho-Bold.ttf);
 }
 
 /*animation*/
-#yin-yang {
-  height:500px;
-  /*animation: spinYin 5s;*/
-  bottom: 0px;
-  max-width: 100%;
-}
+  /*wave*/
+  #wave {
+    height:500px;
+    animation: waves 4s ease-in-out infinite alternate;
+    bottom: 0px;
+    max-width: 100%;
+  }
+  #wave2 {
+    height:500px;
+    animation: waves 4s 2s ease-in-out infinite alternate;
+    bottom: 0px;
+    max-width: 100%;
+  }
+  @keyframes waves {
+    0% {
+      /*top: 230px;*/
+      transform: skew(0deg, 0deg);
+    }
+    100% {
+      /*top:250px;*/
+      transform: skew(30deg, 0deg);
+    }
+  }
 
-@keyframes spinYin {
+  /*rain*/
+  #rain {
+    animation: rain 2s linear infinite;
+  }
+  @keyframes rain {
+     0% {
+      top: 0px;
+    }
+    70%{
+      opacity: 100%;
+    }
+    100% {
+      top:150px;
+      opacity: 0%;
+    }
+  }
+  #rain2 {
+    animation: rainTwo 2s 1s linear infinite;
+  }
+  @keyframes rainTwo {
+     0% {
+         top: 30px;
+         left: -1vh;
+         opacity: 100%;
+     }
+
+     70% {
+         opacity: 100%;
+     }
+     100% {
+         top: 150px;
+         opacity: 0%;
+         left: -1vh;
+     }
+    }
+  #rain3 {
+    animation: rainThree 2s 2s linear infinite;
+  }
+  @keyframes rainThree {
+     0% {
+         top: 30px;
+         left: 3vh;
+         opacity: 100%;
+     }
+
+     70% {
+         opacity: 100%;
+     }
+     100% {
+         top: 150px;
+         opacity: 0%;
+         left: 3vh;
+     }
+    }
+/*hole animation*/
+#hole {
+  animation: hole 3s linear infinite;
+}
+#holeTwo {
+  opacity: 0%;
+  animation: holeTwo 3s 1s linear infinite;
+}
+#holeThree {
+  opacity: 0%;
+  animation: holeThree 3s 2s linear infinite;
+}
+@keyframes hole {
   0% {
-    transform: rotate(0turn);
+    bottom: -50px;
+    opacity: 0%;
+  }
+  30% {
+    opacity: 100%;
   }
   100% {
-    transform: rotate(1turn);
+    top: 200px;
+    opacity: 0%;
+  }
+}
+@keyframes holeTwo {
+  0% {
+    bottom: -50px;
+    opacity: 0%;
+    left: -6vh;
+    transform: rotate(-15deg);
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    top: 200px;
+    opacity: 0%;
+    left: -6vh;
+    transform: rotate(-15deg);
+  }
+}
+@keyframes holeThree {
+  0% {
+    bottom: -50px;
+    opacity: 0%;
+    left: 2vh;
+    transform: rotate(15deg);
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    top: 200px;
+    opacity: 0%;
+    left: 2vh;
+    transform: rotate(25deg);
+}
+  }
+
+
+#cloudAnimation {
+  animation: cloud 5s linear infinite;
+}
+#cloudAnimationTwo {
+  opacity: 0%;
+  animation: cloudTwo 5s 1s linear infinite;
+}
+@keyframes cloud {
+  0% {
+    left: -50px;
+    opacity: 100%;
+  }
+  80%{
+    opacity: 80%;
+  }
+  100% {
+    left: 200px;
+    opacity: 0%;
+
+  }
+}
+@keyframes cloudTwo {
+  0% {
+    top: 30px;
+    left: -100px;
+    opacity: 0%;
+  }
+  80%{
+    opacity: 100%;
+  }
+  100% {
+    top: 30px;
+    left: 150px;
+    opacity: 0%;
+
+  }
+}
+/*walking*/
+#walking {
+  animation: walking 2s linear infinite;
+}
+@keyframes walking {
+  0% {
+  opacity: 0%;
+  left: 100px;
+  }
+  10%{
+    opacity: 100%;
+  }
+  90% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+    left: -100px;
+
+  }
+}
+#steps {
+  animation: steps 2s linear infinite;
+}
+@keyframes steps {
+  0% {
+  opacity: 0%;
+}
+  100% { 
+    opacity: 0%;
+
+  }
+}
+/*shake*/
+#kawaii {
+  animation: shake 3s infinite;
+}
+#sway {
+  animation: tree 5s ease-in-out infinite alternate;
+}
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+/*tree*/
+#tree {
+    animation: tree 3s ease-in-out infinite alternate;
+
+  }
+#treeTwo {
+    animation: tree 4s 1s ease-in-out infinite alternate;
+
+}
+@keyframes tree {
+  0% {
+    /*top: 230px;*/
+    transform: skew(-10deg, 0deg);
+  }
+  100% {
+    /*top:250px;*/
+    transform: skew(10deg, 0deg);
+  }
+}
+/*randoseruTag*/
+#tag {
+    animation: tag 3s ease-in-out infinite alternate;
+
+  }
+@keyframes tag {
+  0% {
+    /*top: 230px;*/
+    transform: rotate(-5deg);
+  transform-origin: 40% 30%;
+  }
+  100% {
+    /*top:250px;*/
+    transform: rotate(15deg);
+  transform-origin: 40% 30%;
   }
 }
 
+  
 
+
+
+/*hover*/
 .revealText{
-  background-color: var(--green);
-  color: var(--tan);
-  border: none;
-  background: none;
-  font-size: 20px;
-  font-family: bodyRegular;
-
-}
-
-.revealText: hover {
-  color: rgba(0,0,0,0);
-
-}
-.fillrect {
-  border: 1px solid #3fff00;
-  padding: 0 10px;
+  /*border: 2px solid var(--red);*/
+  padding: 0 5px;
   z-index: 1;
-  transition: all 0.5s ease;
+  color: var(--green);
 }
 
-.fillrect:hover {
-  background-color: #3fff00 !important;
+.revealText:hover {
+  color: var(--tan);
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
+
+}
+
+/*links*/
+a:link {
+  color: red;
+  text-decoration: none;
+
+}
+a:visited {
+  color: var(--green);
+  text-decoration: none;
 }
 
