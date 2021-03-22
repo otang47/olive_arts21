@@ -599,12 +599,11 @@ hr{
 
 /*links*/
 a:link {
-  color: red;
   text-decoration: none;
 
 }
 a:visited {
-  color: var(--green);
+  
   text-decoration: none;
 }
 
