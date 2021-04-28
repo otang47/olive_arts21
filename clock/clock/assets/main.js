@@ -18,7 +18,7 @@ $(function() {
     if (h < 12) {
       $clockTextTwo.html("Yumiko is: " + (13 + h) + ":" + m + ":" + s + ":" + ms);
     } else {
-      $clockTextTwo.html("Yumiko is: " + Math.abs(h - 13) + ":" + m + ":" + s + ":" + ms);
+      $clockTextTwo.html("Yumiko is: " + (h - 11) + ":" + m + ":" + s + ":" + ms);
     }
     // $clockTextTwo.html("Yumiko is: " + (13 + h) + ":" + m + ":" + s + ":" + ms);
     $hour.css('transform', 'rotate(' + (360/60 * h) + 'deg)');
