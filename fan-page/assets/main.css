@@ -588,7 +588,7 @@ hr{
   /*border: 2px solid var(--red);*/
   padding: 0 5px;
   z-index: 1;
-  color: var(--green);
+  color: var(--tan);
 }
 
 .revealText:hover {
@@ -602,7 +602,7 @@ hr{
   /*border: 2px solid var(--red);*/
   padding: 0 5px;
   z-index: 1;
-  color: var(--green);
+  color: var(--tan);
 }
 
 .revealTextAngry:hover {
@@ -615,7 +615,7 @@ hr{
   /*border: 2px solid var(--red);*/
   padding: 0 5px;
   z-index: 1;
-  color: var(--green);
+  color: var(--tan);
 }
 
 .revealTextHuman:hover {
@@ -628,7 +628,7 @@ hr{
   /*border: 2px solid var(--red);*/
   padding: 0 5px;
   z-index: 1;
-  color: var(--green);
+  color: var(--tan);
 }
 
 .revealTextEnvironment:hover {
@@ -641,7 +641,7 @@ hr{
   /*border: 2px solid var(--red);*/
   padding: 0 5px;
   z-index: 1;
-  color: var(--green);
+  color: var(--tan);
 }
 
 .revealTextDangerous:hover {
@@ -654,7 +654,7 @@ hr{
   /*border: 2px solid var(--red);*/
   padding: 0 5px;
   z-index: 1;
-  color: var(--green);
+  color: var(--tan);
 }
 
 .revealTextCommercial:hover {
